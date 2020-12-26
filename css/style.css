@@ -1,0 +1,99 @@
+@import 'utilities.css';
+
+:root{
+  --primary: #7c4dff;
+  --dark: #161616;
+  --pure: #ffffff;
+  --ternary: #898989;
+  --light: #f2f2f2;
+
+}
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  -webkit-font-smoothing:antialised;
+}
+body{
+  font-family: 'Poppins', sans-serif;
+}
+
+
+header{
+  background: var(--dark);
+  clip-path: polygon(0 0, 100% 0,100% 100%,80% 90%,0% 100%);
+}
+
+.container{
+  max-width: 1152px;
+  padding: 0 50px;
+  margin: 0 auto;
+
+}
+
+header nav .left a{
+  color: var(--pure);
+  text-decoration: none;
+  margin-right: 2rem;
+  text-transform: uppercase;
+  transition: all .3s ease;
+}
+header nav .left a:hover{
+  color: var(--primary);
+}
+
+header nav{
+  padding: 2rem 0;
+}
+
+header nav .branding{
+  margin-right: 5rem;
+}
+header nav .branding h1{
+  margin-left: 1rem;
+  color: var(--primary);
+}
+
+
+.profile{
+  margin-top: 10px;
+  padding: 3rem 0;
+}
+
+.profile .left img{
+  border-radius: 50%;
+  width: 400px;
+  margin-left: 3rem;
+
+}
+.profile .right{
+  color: var(--pure);
+  margin-left: 4rem;
+}
+
+.profile .right h6{
+  font-size: 1.6rem;
+  color: var(--primary);
+  margin-bottom: 0.5rem;
+  
+}
+.profile .right h1{
+  font-size: 4rem;
+
+  font-weight: 100;
+  
+  line-height: 1.2;
+  margin-bottom: 2rem;  
+}
+.profile .right h1 span{
+  color: var(--primary);
+}
+.profile .right p{
+  line-height: 1.9;
+  margin-bottom: 2rem;
+  
+  text-align: justify;
+}
+.profile .right button{
+  margin-bottom: 2rem;
+}
