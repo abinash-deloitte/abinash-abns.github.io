@@ -3,54 +3,246 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
   <title>Abinash Nayak</title>
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
   <link rel = "stylesheet" href="css/style.css"/>
   <link rel="icon" href="images/icon.png" type="image/icon type">
 </head>
 <body>
-  <header>
-    <div class="container">
-      <nav class=  "flex items-center justify-between">
-        <div class = "left flex items-center">
+  <div class="site-main-wrapper">
+    <button class="hamberger">
+      <img src="images/hamberger.png"  style="width:30px;height:30px;" alt="hamb">
+    </button>
 
-          <div class = "branding flex items-center ">
-            <image src = "images/icon.png" alt="Logo" width=50px height= 50px>
-              <h1>Portfolio</h1>
-          </div>
-          <div class="">
-            <a href="#">Home</a>
-            <a href="#">About</a>
-            <a href="#">Services</a>
-            <a href="#">Home</a>
-            <a href="#">blog</a>
-          </div>
-        </div>
-        <div class = "right">
-          <button class="btn btn-primary">Contact</button>
-        </div>
-      </nav>
-      <div class="profile flex items-center justify-between">
-        <div class = "left">
-          <img src = "images/profile.png" alt="Profile Picture" >        
-        
-        </div>
-        <div class = "right">
-          <h6>Abinash Nayak</h6>
-          <h1>I'm a Software <span>Developer</span>.</h1>
-          <p>
-            A Under Graduate who is seeking to find the opportunity to work in a fun and challenging working environment that will encourage him to improve and learn new and necessary skills as well as be motivated by the company to do his best for the sake of helping himself and the company in the IT industry and in latest and trending technologies.
-          </p>
-          <div>
-            <button class="btn btn-secondary">Download cv</button>
-          </div>
-           
+    <div class="mobile-nav">
+      <button class="times"><img src="images/times.svg" alt=""></button>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#hall-of-fame">Hall of fame</a></li>
+        <li><a href="#contact">Contact</a></li>
 
-        
+      </ul>
+
+
+    </div>
+
+
+      <nav id="main-nav" >
+        <div class="container flex items-center justify-between ">
+          <div class = "left flex items-center ">
+            <div 
+            
+class = "branding ">
+                <h1>PORTFOLIO</h1>
+            </div>
+            <div class="">
+              <a href="#">Home</a>
+              <a href="#about">About</a>
+              <a href="#skills">Skills</a>
+              <a href="#hall-of-fame">Hall of fame</a>
+              <a href="#contact">Contact</a>
+            </div>
+          </div>
+        </div>
+    </nav>
+    <header>
+      <div class="container">
+        <div class="profile flex items-center justify-between">
+          <div class = "left">
+            <img src = "images/profile.png" alt="Profile Picture" >
+          </div>
+          <div class = "right">
+            <h6>Abinash Nayak</h6>
+            <h1>I'm a Software <span>Developer</span>.</h1>
+            <p>
+              A Graduate Fresher who is seeking to find the opportunity
+              to work in a fun and challenging environment 
+              that will encourage him to improve and learn new and
+              necessary skills as well as be motivated by the company
+              to do his best for the sake of helping himself and the 
+              company in the IT industry.
+            </p>
+            <div>
+              <button class="btn btn-secondary">Download cv</button>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
-  </header> 
-</body>
+    </header>
+    <section id="about" class = "about ">
+      <div class = "container flex items-center">
+        <div class="flex-1">
+          <Img class ="about-me-img" src = "images/man-2.png" alt ="">
+        </div>
+        <div class="flex-1">
+          <h1>About <Span>Me</Span></h1>
+          <h3>Hi! I'm Abinash. Nice to meet you. Please take a look around!</h3>   
+          <p> 
+            &emsp;&emsp;
+              I am passionate about building excellent software that improves 
+            the lives of those around me. I enjoy turning complex problems into simple, beautiful. <br>
+            &emsp;&emsp;When I'm not coding, studying or listening music, you'll find me playing pc games,
+            or watching sci-fi movies.
+          </p>
+        </div>
+      </div>
+      <div class = "container flex items-center">
+        <div class="container random-facts flex-1 ">
+          <h1>Random <span>Facts</span></h1>
+          <p>- I drink a lot of coffee</p>
+          <p>- I love to play digital games</p>
+          <p>- I love sandy shore by the sea</p>
+          <p>- I'm a very amiable Person</p>
+          <p>- I'm addicted to Youtube</p>
+          <p>- I want something that i don't know</p>        
+        </div>
+        <div class="flex-1">
+          <Img class ="laptop" src = "images/laptop.png" alt ="">
+        </div>
+      </div>
+      
+    </section>
+    <section id="skills" class="skills">
+      <div class="container">
+        <h1 class="section-heading">TECHNICAL <span>SKILLS</span></h1>
+        <p>“Every artist was first an amateur.”
+          ― Ralph Waldo Emerson</p>
+
+        <div class="card-wrapper">
+          <div class="card">
+            <img src="images/phone.png  " alt="">
+            <h2>PlaceHolder</h2>
+            <p>there are many varienties A Under Geey
+              to work in a fu
+              necessaryst for the sake</p>
+          </div>
+          <div class="card">
+            <img src="images/brush.svg" alt="">
+            <h2>JIRA</h2>
+            <p>there are many varienties A Under Geey
+              to work in a fune the company
+                to do his best for the sake</p>
+          </div>
+          <div class="card">
+            <img src="images/brush.svg" alt="">
+            <h2>Graphic Design</h2>
+            <p>there are many varienties A Under Geey
+              to work in a funke</p>
+          </div>
+          <div class="card">
+            <img src="images/brush.svg" alt="">
+            <h2>Graphic Design</h2>
+            <p>there are many varienties A Under Geey
+              to work in  the sake</p>
+          </div>
+          <div class="card">
+            <img src="images/brush.svg" alt="">
+            <h2>Graphic Design</h2>
+            <p>there are many varienties A Under Geey
+              to work in a well as be the company
+                to do his best for the sake</p>
+          </div>
+          <div class="card">
+            <img src="images/brush.svg" alt="">
+            <h2>Graphic Design</h2>
+            <p>there are mes A Under Geey
+              and
+              necessary skills as well as be the company
+                to do his best for the sake</p>
+          </div>
+        </div>
+        
+      </div>
+    </section>
+    <section id="hall-of-fame" class="hall-of-fame">
+      <div class="container">
+        <h1 class="section-heading">Hall of <span>Fame</span> </h1>
+        <p>“The humans need the certificates of education, but the knowledge needs no certification.”
+          ― Ehsan Sehgal</p>
+
+        <div class="card-wrapper">
+
+          <div class="card">
+            <div class="overlay">
+              <span>Udemy</span>
+              <a href="#">Appium Fromscratch</a>
+            </div>
+            <img src="images/ph-3.png" alt="">
+          </div>
+          <div class="card">
+            <div class="overlay">
+              <span>Microsoft</span>
+              <a href="#">Appium Fromscratch</a>
+            </div>
+            <img src="images/ph-3.png" alt="">
+          </div>
+          <div class="card">
+            <div class="overlay">
+              <span>Category</span>
+              <a href="#">Appium Fromscratch</a>
+            </div>
+            <img src="images/ph-3.png" alt="">
+          </div>
+          <div class="card">
+            <div class="overlay">
+              <span>Category</span>
+              <a href="#">Appium Fromscratch</a>
+            </div>
+            <img src="images/ph-3.png" alt="">
+          </div>
+          <div class="card">
+            <div class="overlay">
+              <span>Category</span>
+              <a href="#">Appium Fromscratch</a>
+            </div>
+            <img src="images/ph-3.png" alt="">
+          </div>
+          <div class="card">
+            <div class="overlay">
+              <span>Category</span>
+              <a href="#">Appium Fromscratch</a>
+            </div>
+            <img src="images/ph-3.png" alt="">
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="contact" class="contact">
+      <div class="container">
+        
+        <h1 class="section-heading"><span>Contact</span> Me</h1>
+        <p id="margin-end">Any suggestion? I would love to hear from you!</p>
+        <div class="mail-to">
+          <button class="btn btn-secondary" > Email</button>
+        </div>
+        <div class="social">
+            
+            <a href="https://www.facebook.com/abinashabns"target="_blank"><img class="social-icon" src="images/facebook.png" alt="dff" ></a>
+            <a href="https://www.instagram.com/abinash_abns"target="_blank"><img class="social-icon" src="images/instagram.png" alt="dff"></a>
+            <a href="https://www.twitter.com/abinash_abns"target="_blank"><img class="social-icon" src="images/twitter.png" alt="dff"></a>
+            <a href="https://github.com/abinash-abns"target="_blank"><img class="social-icon" src="images/github.png" alt="dff"></a>
+            <a href="https://www.linkedin.com/in/abinashabns"target="_blank"><img class="social-icon" src="images/linkedin.png" alt="dff"></a>
+            <a href="https://t.me/abinash_abns" target="_blank"><img class="social-icon" src="images/telegram.png" alt="dff"></a>
+        </div>
+        <div class="credit-copyright">
+          <div class="creditSection">
+            <p>Designed  by <a href="https://github.com/abinash-abns/abinash-abns.github.io" target="_blank">Abinash Nayak</a></p>
+          </div>
+          <div class="copyrightSection">
+                <p>&copy; 2020 Abinash Nayak. All rights reserved.</p>
+          </div>
+        </div>
+      </div>
+
+    </section>
+  </div>
+  <script src="js/security.js"></script>
+  <script src="js/app.js"></script>
+  </body>
 </html>
