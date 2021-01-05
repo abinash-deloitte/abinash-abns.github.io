@@ -1,7 +1,7 @@
 @import 'utilities.css';
 
 :root{
-  --primary: #7c4dff;
+  --primary: #00acc1;
   --primary-overlay: #7c4dffad;
   --dark: #161616;
   --pure: #ffffff;
@@ -23,6 +23,7 @@ html{
 }
 body{
   font-family: 'Poppins', sans-serif;
+  overflow-x: hidden;
   
 }
 
@@ -148,12 +149,8 @@ section.about p{
 
 section.about .about-me-img{
   height: 450px;
-  margin-left: 50px;
-}
-section.about .laptop{
-  height: 500px;
-  margin-left: 50px;
-  margin-top: 110px;
+  margin-left: 100px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 section.about h1{
@@ -177,13 +174,12 @@ section.about p{
   font-size: 1.1rem;
 }
 
-section.about h1{
-  
+section.about h1{  
   margin-bottom: 5%;
 }
 section.about .random-facts{
   padding-top: 10rem;
-  padding-left: 6rem;
+  padding-left: 9rem;
   margin-top: -100px;
  
 }
@@ -195,6 +191,13 @@ section.about .random-facts p{
   color: var(--ternary);
   line-height: 1;
   margin-bottom: 1rem;
+  padding-left: .5rem;
+}
+section.about .laptop img{
+  height: 500px;
+  margin-left: 3rem;
+  margin-top: 110px;
+  
 }
 
 .section-heading{     /*technical skills about home etc*/
@@ -373,49 +376,33 @@ section.contact .credit-copyright .creditSection a{
 
 }
 
-@media(max-width:1215px)
-{
-  #main-nav{
-    display: none;
-    
-  }
-  header{
-    padding-top: 0rem;;
-  }
-  .profile .left img{
-    width: 260px;
-  }
-  .profile .right h1{
-    font-size: 3rem;
-  }
-  .profile{
-    padding-top: 8rem;
-  }
-  section.about .about-me-img{
-    height: 420px;
-    margin-left: 70px;
-  }
-}
-
 .site-main-wrapper{
   position:relative;
 
 }
+.portfolio-logo{
+color: var(--primary);
+top:40px;
+left: 30px;
+font-size: .6rem;
+position: absolute;
+z-index: 11;
+}
 .hamberger{
-  position: absolute;
+  position: fixed;
   top:40px;
   right: 40px;
   z-index: 11;
   background: none;
-  border: none;
-  filter: invert(1);
+  border:none;
   outline: none;
   cursor: pointer;
-
+  display: none;
 }
 
 .mobile-nav{
   position: fixed;
+  text-align: center;
   top:0;
   left: 0%;
   z-index: 1001;
@@ -423,7 +410,7 @@ section.contact .credit-copyright .creditSection a{
   width: 100%;
   height: 100%;
   padding: 2rem ;
-  padding-top: 5rem;
+  padding-top: 10rem;
   transform: translateX(-100%);
   transition: all .5s ease-in-out;
 }
@@ -432,12 +419,13 @@ section.contact .credit-copyright .creditSection a{
 }
 .times{
   position: fixed;
-  top: 30px;
-  right: 30px;
+  top: 40px;
+  right: 40px;
   border: none;
   background: none;
   outline: none;
   cursor: pointer;
+  filter: invert(100%);
 
 }
 .times img{
@@ -453,4 +441,170 @@ section.contact .credit-copyright .creditSection a{
   text-decoration: none;
   font-size: 2rem;  
   color: var(--light);
+}
+@media(max-width:1215px)
+{
+  #main-nav{
+    display: none;  
+  }
+  .hamberger{
+    display: block;
+  }
+  .profile .left img {
+    width: 287px;
+    margin-left: -1rem;
+    margin-top: -8rem;
+  }
+  .profile .right h1 {
+    font-size: 2.5rem;
+  }
+  .profile .right p {
+    line-height: 1.7;
+  } 
+  header {
+      
+      clip-path: polygon(0% 0%, 100% 0%,100% 100%,0% 95%);
+      margin-top: 0px;
+      padding-top: 2.5rem;
+  }
+  .profile .right button {
+    margin-bottom: 2rem;
+}
+  section.about{
+    padding:5rem 0;
+  }
+
+  section.about .about-me-img {
+    height: 312px;
+    margin-left: 15px;
+}
+section.about .random-facts {
+  padding-top: 4rem;
+  padding-left: 3rem;
+  margin-top: -2px;
+}
+section.about .laptop img {
+  height: 270px;
+  margin-left: -1.5rem;
+  margin-top: 40px;
+}
+section.about .random-facts p {
+  font-size: 1.1rem;
+  color: var(--ternary);
+  line-height: 1;
+  margin-bottom: 1rem;
+}
+section{
+  padding: 4rem 0;
+}
+.section-heading + p {
+    margin-bottom: 4rem;
+}
+section.skills .card-wrapper{
+  grid-template-columns: repeat(2,1fr);
+}
+section.hall-of-fame .card-wrapper {
+  
+  grid-template-columns: repeat(2,1fr);
+
+}
+section.hall-of-fame {
+  margin-top: 0rem;
+}
+
+}
+
+@media (max-width:576px){
+
+  .container {
+    padding: 0 25px;
+}
+  .profile{
+    flex-direction: column;
+  }
+ 
+  .profile .left img {
+    width: 217px;
+    margin-left: 0rem;
+    margin-top: 0rem;
+   } 
+  .profile .left{
+    margin-top: -1rem;
+  }
+  .profile .right{ 
+    margin-left: 0rem; 
+    padding: 1rem 0rem;   
+  }
+  .profile .right h1 {
+    margin-bottom: 1.5rem;
+  }
+  header {
+      
+    clip-path: polygon(0% 0%, 100% 0%,100% 100%,0% 97%);
+  }
+  .profile .right button {
+    margin-bottom: 0rem;
+  }
+
+  section.about .flex{
+    flex-direction:column ;
+  }
+  section.about{
+    padding-top: 4rem;
+    padding-bottom: 1rem;
+  }
+  section.about .about-me-img {
+    height: 270px;
+    margin-left: 0;
+ }
+  section.about h1 {
+    margin-bottom: 5%;
+    margin-top: 2rem;
+    text-align: center;
+  } 
+  section.about h3 {
+    margin-bottom: .5rem;
+    text-align: center;
+  }  
+  section.about .random-facts {
+    padding-top: 4rem;
+    padding-left: 0rem;
+    margin-top: -76px;
+    text-align: center;
+  }
+  section.about .random-facts h1 {
+    padding-bottom: 1rem;
+}
+section.about .laptop img {
+  height: 270px;
+  margin-left: 0rem;
+  margin-top: -25px;
+}
+section.skills .card-wrapper {
+  grid-template-columns: repeat(1,1fr);
+  
+}
+section.hall-of-fame .card-wrapper {
+  grid-template-columns: repeat(1,1fr);
+  padding: 0 2rem;
+}
+section.contact {
+  padding-bottom: 1rem;
+  padding-top: 4rem;
+  clip-path: polygon(0% 5%, 100% 0%,100% 100%,0% 100%);
+}
+section.contact .credit-copyright .copyrightSection p{
+  padding-top:0.3rem ;
+  font-size: 0.9rem;
+}
+.section-heading + p {
+  margin-bottom: 4rem;
+}
+.section-heading + p.margin-end{
+  margin-bottom: 2rem;
+}
+section.contact .container .mail-to {
+  
+  margin-top: -1.2rem;
+}
 }
