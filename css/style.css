@@ -387,6 +387,7 @@ left: 30px;
 font-size: .6rem;
 position: absolute;
 z-index: 11;
+display: none;
 }
 .hamberger{
   position: fixed;
@@ -450,6 +451,7 @@ z-index: 11;
   .hamberger{
     display: block;
   }
+  
   .profile .left img {
     width: 287px;
     margin-left: -1rem;
@@ -515,7 +517,9 @@ section.hall-of-fame {
 }
 
 @media (max-width:576px){
-
+  .portfolio-logo{
+    display: block;
+  }
   .container {
     padding: 0 25px;
 }
